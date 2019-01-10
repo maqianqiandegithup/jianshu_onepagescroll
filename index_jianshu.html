@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>简书，创作你的创作</title>
+<link rel="stylesheet" href="ddfullscreenslider.css">
+<link rel="stylesheet" href="style1.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mousewheel.min.js"></script>
+<script src="ddfullscreenslider.js"></script>
+<script src="scripts.js"></script>
+
+<style>
+ 
+</style>
+</head>
+
+<body>
+<section id="dowebok" class="dd_fullscreenslider">
+    <div id="nav">
+
+ <img class="logo" src="image/logo.png">
+      <ul class="titlenav">
+        <li><a href="http://www.jianshu.com/">官网首页</a></li>
+         <li><a href="http://www.jianshu.com/c/e048f1a72e3d?utm_medium=index-banner-s&utm_source=desktop">简书学堂</a></li>
+          <li><a href="http://www.jianshu.com/p/e23da3ae0696">使用指南</a></li>
+           <li><a href="http://www.jianshu.com/notifications#/chats/new?mail_to=4">联系简书</a></li>
+    </ul>
+    </div>
+   
+	<div class="slidewrapper">
+     <!--第一个slide-->  
+		<article class="slide" id="slide1">
+             <!--用script生成流星-->
+           <script>           
+                  setInterval("Createliuxing2(\"slide1\",\"1\")",3000);
+                  setInterval("Createliuxing2(\"slide1\",\"2\")",3300);
+                  setInterval("Createliuxing2(\"slide1\",\"3\")",3500); 
+             
+                //生成闪烁的星星    
+                    for(var j=1;j<(10+Math.random()*9);j++){
+                      var i=j%3;
+                      star2=new Star1("xing"+i);
+                      $("#"+"slide1").append(star2);
+                   
+                   }
+           </script>
+                <p id="biaoti" style="position: relative; top: 15%; font: 600 60px 'Microsoft Yahei'; text-align: center;display: none">
+                            简书，创作你的创作</p>
+                <p id="pc" style=" top: 25%; display: none" ><a href="http://www.jianshu.com/" target="_blank" class="liaojie">进入电脑端</a></p>
+                <p id="mt" style="top: 30%; display: none;"><a href="http://www.jianshu.com/apps"target="_blank" class="liaojie">下载手机端</a></p>
+                            
+				</article>
+    <!--第二个slide-->
+		<article class="slide" id="slide2">
+               <!--用script生成流星-->
+             <script>
+             
+                  setInterval("Createliuxing2(\"slide2\",\"5\",2000)",3300);
+                  setInterval("Createliuxing2(\"slide2\",\"6\",2000)",4000);
+                 setInterval("Createliuxing2(\"slide2\",\"7\",2000)",4500); 
+                
+                for(var j=1;j<(10+Math.random()*9);j++){
+                   var i=j%3;
+                   star2=new Star1("xing"+i);
+                  $("#slide2").append(star2);
+                   
+              }
+             
+             </script>
+                   <div class="container">
+                       <div id="text2" class="center text_inner">
+                         <p class="title">发表原创</p>
+                         <p class="intro">发表自撰文章，创建专题，做好整理</p>
+                      </div>
+                      <div class="img">
+                         <img src="image/wenzhang.png" class="main_img" id="image1" />
+                         <img src="image/zhuanti.png" class="main_img_ie" id="image2" />
+                      </div>
+
+                   </div>
+                    
+
+		</article>
+   <!--第三部分-->
+		<article class="slide" id="slide3">
+               <script>
+
+                  setInterval("Createliuxing2(\"slide3\",\"8\",2000)",3500);
+                  setInterval("Createliuxing2(\"slide3\",\"9\",2000)",3200);
+                 setInterval("Createliuxing2(\"slide3\",\"10\",2000)",3000); 
+                 
+                  for(var j=1;j<(10+Math.random()*9);j++){
+                     var i=j%3;
+                     star2=new Star1("xing"+i);
+                     $("#slide3").append(star2);
+                   
+                   }
+             </script>
+           
+
+			<div class="container">
+                 <div id="text3" class="center text_inner">
+                    <p class="title">关注动态</p>
+                    <p class="intro">让作者离你不遥远</p>
+                 </div>
+                 <div class="img">
+                     <img src="image/dongtai1.png" class="main_img" id="image3" />
+                 </div>
+           </div>
+
+		</article>
+<!--第四部分-->
+		<article class="slide" id="slide4">
+     <script>
+            //流星
+            setInterval("Createliuxing2(\"slide4\",\"11\",2000)",3000);
+            setInterval("Createliuxing2(\"slide4\",\"12\",2000)",3500);
+           for(var j=1;j<(10+Math.random()*9);j++){
+                  var i=j%3;
+                  star2=new Star1("xing"+i);
+                  $("#slide4").append(star2);
+                   
+              }
+     </script>
+               
+			  <div class="container">
+                  <div id="text4" class="center text_inner">
+                    <p class="title">深度交流</p>
+                    <p class="intro">发表个性评论，简信沟通观点，畅快深度交流</p>
+                  </div>
+                 <div class="img">
+                    <img src="image/jianxin.png" class="main_img" id="image4" />
+                     <img src="image/pinglun.png" class="main_img_ie" id="image5" />
+                 </div>
+             </div>
+
+		</article>
+     <!--第五部分-->
+		<article class="slide" id="slide5">
+            <script>
+             setInterval("Createliuxing2(\"slide5\",\"13\",2000)",3200);
+            setInterval("Createliuxing2(\"slide5\",\"14\",2000)",3400);
+           
+            
+              for(var j=1;j<(10+Math.random()*9);j++){
+                  var i=j%3;
+                  star2=new Star1("xing"+i);
+               $("#"+"slide5").append(star2);
+                   
+              }
+               
+    
+          </script>
+
+              
+                      
+			 <div class="container">
+                <div id="text5" class="center text_inner">
+                    <p class="title">三大优点</p>
+                    <p class="intro">优雅，优质，最佳</p>
+                </div>
+                 <div class="img"> 
+                     <img src="image/youdian.png" class="main_img" id="image6" />
+                     <img src="image/youdian5.png" class="main_img_ie" id="image7" />
+                     <img src="image/youdian4.png"  class="bg_icon" id="image8"/>
+                 </div>
+            </div>
+
+		</article>
+	</div>
+</section>
+
+</body>
+</html>
